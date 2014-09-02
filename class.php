@@ -100,6 +100,10 @@ class notFriend extends user{
 	function showReply($userEvaluateID){
 		return false;
 	}
+
+	function showFriends(){
+		return;
+	}
 }
 
 class friend extends user{
@@ -140,7 +144,7 @@ class friend extends user{
 			if ($crow = fetch($crs)){
 				echo $crow['date']."에 ".$crow['rate']."점을 주셨습니다! <input type='button' value='수정' onclick='javascript:reeval($x)'>\n";
 				echo "<div id=layer$x style='display:none;'>\n";
-				echo "<input type='hidden' name='eval[$x][2]' value='1'>\n";
+				echo "<br><input type='hidden' name='eval[$x][2]' value='1'>\n";
 			}
 			else{
 				echo "<div id=layer$x>\n";
@@ -162,6 +166,10 @@ class friend extends user{
 			lb(1);
 		}
 		echo "<input type='submit' value='나도 평가하기' ></form>\n";
+	}
+
+	function showFriends(){
+		return;
 	}
 }
 ?>

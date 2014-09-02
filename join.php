@@ -12,6 +12,7 @@ require_once('header.php');
 $fid = $_POST['firstname']."@".$_POST['lastname'];
 $upw = $_POST['pw'];
 $uname = $_POST['name'];
+alert($uname);
 $ubirth = date("Y-m-d",strtotime($_POST['year']."-".$_POST['month']."-".$_POST['day']));
 $gender = $_POST['gender'];
 date_default_timezone_set("Asia/Seoul");

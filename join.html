@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang = "ko">
+<meta charset = "utf-8">
+ <head>
+  <title>:: Join Page ::</title>
+  <h2>Please Enter information</h2>
+
+ </head>
+ <body>
+  <form method='post' enctype="multipart/form-data" action='./join.php'>
+  Email : <input type='text' name='firstname'>@<input type='text' name='lastname'><br>
+  Password : <input type='password' name='pw' id='pw'><br>
+  Repeat : <input type='password' name='rpw' id='rpw'><br>
+  Name : <input type ='text' name = 'name' id ='name'><br>
+  Birth : <input type='text' name = 'year' id='year' size=4>year <input type='text' name='month' id='month' size=2>month <input type='text' name='day' id='day' size=2>day<br>
+  Gender : <input type='radio' value='man' name='gender'>man  <input type='radio' value='women' name='gender'>women<br>
+
+  #Profile photo
+  <input type='file' id="upload_file" name = "upload_file"><br/>
+  <input type ='submit' value='확인'>
+  <input type = 'button' onclick="location.href('./index.php');" value='취소'>
+  </form>
+ </body>
+</html>

@@ -16,9 +16,6 @@ if (strlen($_GET['IDuser']) > 0 && $_GET['IDuser'] != $_SESSION['user']->IDuser)
 else{
 	$user = $_SESSION['user'];
 }
-
-echo "안녕하세요 ".$_SESSION['user']->name."님";
-
 $q = "select picPath from user where username = '".$_SESSION['user']->username."'";
 $rs = query($q);
 while($row = fetch($rs)){
@@ -32,6 +29,8 @@ while($row = fetch($rs)){
 		//프로필 사진 없을때 처리
 	}
 }
+
+echo "안녕하세요 ".$_SESSION['user']->name."님";
 ?>
 
 <form action="logout.php">

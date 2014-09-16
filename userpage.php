@@ -49,7 +49,7 @@ while($row = fetch($rs)){
 <?php
 lb(1);
 
-$user->showFriends();
+$_SESSION['user']->showFriends();
 
 $user->showEvaluate();
 

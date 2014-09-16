@@ -1,0 +1,11 @@
+.replyUl
+{
+    list-style: none;
+	padding:2;
+	margin:2;
+}
+
+A:link    {color:#555555;text-decoration:none;} 
+A:visited {color:#555555;text-decoration:none;}
+A:active  {color:#555555;text-decoration:none;} 
+A:hover   {color:#555555;text-decoration:none;}

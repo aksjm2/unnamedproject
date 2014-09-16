@@ -11,8 +11,12 @@ function reeval(evaluateID){
 		document.getElementById("layer"+opened).style.display = "none";
 	}
 	*/
-
-	myLayer.style.display = "inline";
+	if (myLayer.style.display == "none"){
+		myLayer.style.display = "inline";
+	}
+	else{
+		myLayer.style.display = "none";
+	}
 	//opened = evaluateID;
 	//actionValue.value = evaluateID;
 
